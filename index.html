@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="media-queries.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pomodoro Timer</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="pomodoro-logo.png" alt="Pomodoro Timer logo" />
+      <nav class="nav">
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">History</a>
+        <a class="nav-link" href="#">How it works</a>
+        <a class="nav-link nav-menu--1" href="#">Focus techniques</a>
+        <a
+          class="nav-link nav-menu--1"
+          href="https://en.wikipedia.org/wiki/Pomodoro_Technique"
+          target="”_blank”"
+          >Learn more</a
+        >
+        <ion-icon class="nav-menu" name="menu"></ion-icon>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div class="timer focus-timer">
+        <p>Focus time</p>
+        <button class="time focus-clock"></button>
+      </div>
+      <div class="breaks">
+        <div class="timer break-timer">
+          <p class="break">Take a short break</p>
+          <button class="time focus-break short-break"></button>
+        </div>
+        <div class="timer break-timer">
+          <p class="break">Take a longer break</p>
+          <button class="time focus-break long-break">30:00</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer-container">
+      <p class="footer footer-copyright">Copyright &copy Anna Werno</p>
+      <p class="footer footer-unsplash">
+        Background photo by
+        <a
+          href="https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Pawel Czerwinski</a
+        >
+        on
+        <a
+          href="https://unsplash.com/photos/3T4rfR_XZf0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </p>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+  <script src="script.js"></script>
+</html>

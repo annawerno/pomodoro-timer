@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(img/tomato-background-green.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Hammersmith One", sans-serif;
+}
+
+/* HEADER  */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+
+.logo {
+  height: 120px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background-color: #7d1904;
+  color: #f0d3cd;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  transition: 0.4s;
+}
+
+.nav-link:hover {
+  color: #7d1904;
+  background-color: #f0d3cd;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.nav-menu {
+  font-size: 4rem;
+  color: #7d1904;
+  display: none;
+}
+
+/* MAIN  */
+.main-container {
+  background-color: #fbd0c0;
+  width: 75%;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 3.2rem;
+  padding: 4rem 4rem;
+  height: 400px;
+}
+.timer {
+  position: relative;
+  margin-bottom: 140px;
+}
+
+.time {
+  border: none;
+  padding: 3rem 6rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  background-color: #641403;
+  color: #f0d3cd;
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.focus-timer p {
+  text-transform: uppercase;
+}
+
+.focus-clock,
+.focus-break {
+  margin-bottom: 2rem;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: 0.3s;
+}
+
+.focus-clock:hover,
+.focus-break:hover {
+  background-color: #fbd0c0;
+  border: 3px solid #7d1904;
+  color: #7d1904;
+  padding: 4rem 7rem;
+  transform: translate(-50%, -10%);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.breaks {
+  display: flex;
+  justify-content: center;
+  gap: 30rem;
+}
+
+.breaks p {
+  font-size: 2.4rem;
+}
+.breaks button {
+  background-color: #974736;
+  padding: 2rem 4rem;
+}
+
+/* FOOTER  */
+/* footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+ 
+} */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+}
